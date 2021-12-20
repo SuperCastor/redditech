@@ -10,7 +10,7 @@ I used Flutter
 ![Redditech_screen_2](https://user-images.githubusercontent.com/44160638/146757352-8e3dccb6-f999-4276-bd8e-68140d6252ca.png)
 
 ![Redditech_screen_3](https://user-images.githubusercontent.com/44160638/146757365-e526f69b-b46b-4cb3-8057-8b7a9a819446.png)
-![Redditech_screen_4](https://user-images.githubusercontent.com/44160638/146759156-cc6ee3cd-2c63-4c7a-a482-bfeff156e50d.png)
+![Redditech_screen_4](https://user-images.githubusercontent.com/44160638/146760066-2ca5ae4e-27dd-4134-b834-24fbe6451f32.png)
 
 
 ## Getting Started
