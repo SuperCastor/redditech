@@ -43,6 +43,9 @@ class _ProfileState extends State<Profile> {
         setState(() {
           _me = res;
           v1 = true;
+          print(bannerParse
+              .stringMatch(_me["subreddit"]["banner_img"])
+              .toString());
         });
       });
     });
@@ -67,12 +70,16 @@ class _ProfileState extends State<Profile> {
           ),
           body: Column(children: [
             Stack(children: [
-              _me["subreddit"]["is_default_banner"] == true
-                  ? Image.asset("./images/default_banner.jpg")
-                  : Image(
-                      image: NetworkImage(bannerParse
-                          .stringMatch(_me["subreddit"]["banner_img"])
-                          .toString())),
+              Container(
+                height: MediaQuery.of(context).size.height * 0.3,
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                        fit: BoxFit.fitWidth,
+                        alignment: FractionalOffset.topCenter,
+                        image: NetworkImage(bannerParse
+                            .stringMatch(_me["subreddit"]["banner_img"])
+                            .toString()))),
+              ),
               Column(children: [
                 Padding(padding: EdgeInsets.only(bottom: 50)),
                 Center(

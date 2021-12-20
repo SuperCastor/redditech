@@ -25,13 +25,13 @@ class ButtonBarState extends State<ProfileBar> {
 
   Widget build(BuildContext context) {
     ButtonStyle notSelected = TextButton.styleFrom(
-      fixedSize: Size(MediaQuery.of(context).size.width / 3.2535, 30),
+      fixedSize: Size(MediaQuery.of(context).size.width / 4, 30),
       backgroundColor: Colors.white,
       primary: Colors.orange,
       side: BorderSide(color: Colors.orange),
     );
     ButtonStyle selected = TextButton.styleFrom(
-      fixedSize: Size(MediaQuery.of(context).size.width / 3.2535, 30),
+      fixedSize: Size(MediaQuery.of(context).size.width / 4, 30),
       backgroundColor: Colors.orange,
       primary: Colors.white,
       side: BorderSide(color: Colors.orange),
@@ -40,6 +40,7 @@ class ButtonBarState extends State<ProfileBar> {
     return Container(
       child: Column(children: [
         ButtonBar(
+          alignment: MainAxisAlignment.center,
           children: [
             TextButton(
               onPressed: () {
